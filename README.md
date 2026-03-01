@@ -1,6 +1,3 @@
-Here is a professional, clean, and impressive `README.md` template tailored specifically for your monorepo. It acts as the "front page" of your portfolio, showing visitors exactly what you are learning and building.
-
-You can copy the markdown code below and paste it directly into the `README.md` file on your GitHub repository. Just be sure to update the bracketed info like `Muhammad Sudais`.
 
 ```markdown
 # 🧭 LangGraph Journey
