@@ -1,0 +1,47 @@
+{
+  "name": "omniassist",
+  "version": "1.0.0",
+  "description": "AI-Powered Multi-Agent Conversational Platform built on LangGraph + Groq",
+  "llm_provider": "groq",
+  "default_model": "llama-3.3-70b-versatile",
+  "available_models": [
+    "llama-3.3-70b-versatile",
+    "llama-3.1-8b-instant",
+    "mixtral-8x7b-32768",
+    "gemma2-9b-it"
+  ],
+  "agents": [
+    "chat_agent",
+    "research",
+    "writing",
+    "task_mgmt",
+    "code_exec",
+    "data_analysis"
+  ],
+  "graphs": {
+    "main": "src/graphs/main.py:graph",
+    "research": "src/graphs/research.py:graph",
+    "writing": "src/graphs/writing.py:graph",
+    "task_management": "src/graphs/task_management.py:graph",
+    "data_analysis": "src/graphs/data_analysis.py:graph",
+    "code_pipeline": "src/workflows/code_pipeline.py:code_pipeline"
+  },
+  "checkpointing": {
+    "dev": "memory",
+    "prod": "sqlite"
+  },
+  "memory": {
+    "short_term": "message_trimming",
+    "long_term": "langgraph_store"
+  },
+  "features": [
+    "multi_agent_supervisor",
+    "human_in_the_loop",
+    "parallel_fan_out_fan_in",
+    "functional_api_entrypoint",
+    "time_travel_checkpointing",
+    "semantic_memory_store",
+    "mcp_integration",
+    "streaming_events"
+  ]
+}

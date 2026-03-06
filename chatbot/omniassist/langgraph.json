@@ -1,0 +1,9 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "omniassist": "./src/graphs/main.py:graph",
+    "research_only": "./src/graphs/research.py:graph",
+    "code_runner": "./src/workflows/code_pipeline.py:code_pipeline"
+  },
+  "env": ".env"
+}

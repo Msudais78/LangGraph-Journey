@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OmniAssist — AI Multi-Agent Chat</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="header-left">
+          <h1>🤖 OmniAssist</h1>
+          <span class="subtitle">Powered by Groq</span>
+        </div>
+        <div id="status">
+          <span id="agent-badge">Ready</span>
+          <span id="thread-id"></span>
+        </div>
+      </header>
+
+      <div id="chat-container">
+        <div id="messages">
+          <div class="message ai">
+            <div class="agent-tag">system</div>
+            <div>
+              👋 Hello! I'm OmniAssist — your AI assistant powered by Groq. How
+              can I help you today?
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="approval-bar" style="display: none">
+        <p id="approval-prompt"></p>
+        <button onclick="resumeWith('approved')">✅ Approve</button>
+        <button class="reject-btn" onclick="resumeWith('rejected')">
+          ❌ Reject
+        </button>
+      </div>
+
+      <div id="input-container">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Type a message..."
+          autofocus
+        />
+        <button id="send-btn" onclick="sendMessage()">Send</button>
+        <button id="new-thread-btn" onclick="newThread()">New Thread</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

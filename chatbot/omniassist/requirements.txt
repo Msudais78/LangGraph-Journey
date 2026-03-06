@@ -1,0 +1,26 @@
+# Core LangGraph & LangChain
+langgraph>=0.2
+langchain-core>=0.3
+langchain-groq>=0.2
+langchain-community>=0.3
+
+# Checkpointing
+langgraph-checkpoint-sqlite>=2.0
+
+# Tools & Search
+tavily-python>=0.5
+
+# Data validation
+pydantic>=2.0
+python-dotenv>=1.0
+
+# HTTP
+httpx>=0.27
+
+# CLI UI
+rich>=13.0
+
+# Dev / Testing
+pytest>=8.0
+pytest-asyncio>=0.23
+ruff>=0.4
